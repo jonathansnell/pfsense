@@ -2824,7 +2824,7 @@ function check_dnsavailable($proto='inet') {
 	$nameservers = array_merge($gdns, get_dns_nameservers());
 	$test = 0;
 
-	foreach ($gdns as $dns) {
+	foreach ($nameservers as $dns) {
 		if ($dns == '127.0.0.1') {
 			continue;
 		} else {
